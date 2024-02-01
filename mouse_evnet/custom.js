@@ -1,15 +1,15 @@
 document.addEventListener("mousemove", function (event) {
-    var mouseX = event.pageX;
-    var mouseY = event.pageY;
-    var container = document.querySelector(".container");
-    var radialGradient = document.querySelector(".radial-gradient");
-    var gradientSize = radialGradient.offsetWidth; // Assuming the radial gradient is a square, so width and height are the same
+    const mouseX = event.pageX;
+    const mouseY = event.pageY;
+    const container = document.querySelector(".container");
+    const radialGradient = document.querySelector(".radial-gradient");
+    const gradientSize = radialGradient.offsetWidth; 
 
-    var newX = mouseX - gradientSize / 2;
-    var newY = mouseY - gradientSize / 2;
+    const newX = mouseX - gradientSize / 2;
+    const newY = mouseY - gradientSize / 2;
 
-    var containerWidth = container.offsetWidth;
-    var containerHeight = container.offsetHeight;
+    const containerWidth = container.offsetWidth;
+    const containerHeight = container.offsetHeight;
 
     if (newX < 0) {
         newX = 0;
