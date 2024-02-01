@@ -1,0 +1,39 @@
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+        to right,
+        #ffb48f,
+        #ffa376,
+        #ff9662,
+        #ff7d5f,
+        #ff7258
+    );
+    animation: gradient 5s ease infinite;
+    background-size: 400% 400%;
+}
+
+.radial-gradient {
+    position: absolute;
+    width: 50vh;
+    height: 50vh;
+    border-radius: 50%;
+    filter: blur(50px);
+    background: radial-gradient(circle at 50% 50%, rgb(245, 245, 220), #ffa376);
+    /*   opacity: .4; */
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
